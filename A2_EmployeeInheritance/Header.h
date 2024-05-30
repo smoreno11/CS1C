@@ -16,8 +16,7 @@
 #include <fstream>   // file in & out
 #include <time.h>    // system time
 #include <stdlib.h>  // srand and rand
-using namespace std;
 
-void PrintHeader(string asName, int asNum, char asType);
+//void PrintHeader(string asName, int asNum, char asType);
 
 #endif /* HEADER_H_ */

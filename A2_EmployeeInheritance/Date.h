@@ -1,21 +1,61 @@
+#ifndef DATE_H_
+#define DATE_H_
+
 #include <string>
+#include "header.h"
 
 class Date{
 
   public:
 
-    Date();
-    Date(int month, int day, int year);
-    ~Date();
+    Date()
+    {
+      month = 0;
+      day = 0;
+      year = 0;
+    }
 
-    void setMonth(int month);
-    int getMonth();
+    Date(int month, int day, int year) : month(month), day(day), year(year)
+    {
+      
+    }
 
-    void set(int day);
-    int getMonth();
+    ~Date()
+    {
 
-    void setYear(int year);
-    int getYear();
+    }
+
+    void setMonth(int month)
+    {
+      this->month = month;
+    }
+    int getMonth()
+    {
+      return month;
+    }
+
+    void setDay(int day)
+    {
+      this->day = day;
+    }
+    int getDay()
+    {
+      return day;
+    }
+
+    void setYear(int year)
+    {
+      this->year = year;
+    }
+    int getYear()
+    {
+      return year;
+    }
+
+    void printHireDate()
+    {
+      std::cout << month << "/" << day << "/" << year;
+    }
 
   private:
     int month;
@@ -23,3 +63,5 @@ class Date{
     int year;
 
 };
+
+#endif /* DATE_H_ */
