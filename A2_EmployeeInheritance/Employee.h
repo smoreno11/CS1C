@@ -91,7 +91,7 @@ class Employee{
       return jobTitle;
     }
 
-    void setJotTitle(std::string jobTitle)
+    void setJobTitle(std::string jobTitle)
     {
       this->jobTitle = jobTitle;
     }
@@ -130,7 +130,7 @@ class Employee{
       
     }
 
-    void printEmployee() 
+    void printEmployee() const 
     {
       printHeader();
       std::cout << std::left;
@@ -142,7 +142,7 @@ class Employee{
       hireDate.printHireDate();
       std::cout << std::right << std::endl;
 
-      std::cout << std::endl << std::right;
+      std::cout << std::endl;
     }
 
 

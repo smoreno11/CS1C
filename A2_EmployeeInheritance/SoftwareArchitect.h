@@ -17,8 +17,8 @@ class SoftwareArchitect: public Employee{
 
     SoftwareArchitect(Employee employed, int departmentNumber, std::string supervisorsName, 
                       int percentSalaryIncrease, int yearsOfExperience) : employed(employed),
-                      departmentNumber(departmentNumber), percentSalaryIncrease(percentSalaryIncrease),
-                      yearsOfExperience(yearsOfExperience) 
+                      departmentNumber(departmentNumber), supervisorsName(supervisorsName), 
+                      percentSalaryIncrease(percentSalaryIncrease), yearsOfExperience(yearsOfExperience) 
     {
 
     }
@@ -84,6 +84,88 @@ class SoftwareArchitect: public Employee{
                 << std::setw(SET_LANGUAGE) << yearsOfExperience;
       std::cout << std::right;
       std::cout << std::endl << std::endl;
+    }
+
+
+    /*Overrided functions*/
+    std::string getEmployee()
+    {
+      return employed.getEmployee();
+    }
+
+    void setEmployee(std::string employee)
+    {
+      employed.setEmployee(employee);
+    }
+
+    int getEmployeeId()
+    {
+      return employed.getEmployeeId();
+    }
+
+    void setEmployeeId(int employeeId)
+    {
+      employed.setEmployeeId(employeeId);
+    }
+
+    long getPhoneNumber()
+    {
+      return employed.getPhoneNumber();
+    }
+
+    void setPhoneNumber(long phoneNumber)
+    {
+      employed.setPhoneNumber(phoneNumber);
+    }
+
+    int getAge()
+    {
+      return employed.getAge();
+    }
+
+    void setAge(int age)
+    {
+      employed.setAge(age);
+    }
+
+    char getGender()
+    {
+      return employed.getGender();
+    }
+
+    void setGender(char gender)
+    {
+      employed.setGender(gender);
+    }
+
+    std::string getJobTitle()
+    {
+      return employed.getJobTitle();
+    }
+
+    void setJobTitle(std::string jobTitle)
+    {
+      employed.setJobTitle(jobTitle);
+    }
+
+    double getSalary()
+    {
+      return employed.getSalary();
+    }
+
+    void setSalary(double salary)
+    {
+      employed.setSalary(salary);
+    }
+
+    Date getHireDate()
+    {
+      return employed.getHireDate();
+    }
+
+    void setHireDate(Date hireDate)
+    {
+      employed.setHireDate(hireDate);
     }
 
   private:

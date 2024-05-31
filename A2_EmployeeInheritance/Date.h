@@ -52,7 +52,7 @@ class Date{
       return year;
     }
 
-    void printHireDate()
+    void printHireDate() const
     {
       std::cout << month << "/" << day << "/" << year;
     }

@@ -74,7 +74,7 @@ class Programmer: public Employee{
       this->javaIdentifier = javaIdentifier;
     }
 
-    void printHeader()
+    void printHeader() 
     {
       std::cout << std::left;
       std::cout << std::setw(SET_NAME) << "Name" << std::setw(SET_ID) << "Department"
@@ -84,7 +84,7 @@ class Programmer: public Employee{
       std::cout << std::endl;
     }
 
-    void printProgrammer()
+    void printProgrammer() 
     {
       employed.printEmployee();
       printHeader();
@@ -110,10 +110,90 @@ class Programmer: public Employee{
       {
         std::cout << "false ";
       }
-    
       std::cout << std::right;
       std::cout << std::endl << std::endl; 
       
+    }
+
+    /*Overrided functions*/
+    std::string getEmployee()
+    {
+      return employed.getEmployee();
+    }
+
+    void setEmployee(std::string employee)
+    {
+      employed.setEmployee(employee);
+    }
+
+    int getEmployeeId()
+    {
+      return employed.getEmployeeId();
+    }
+
+    void setEmployeeId(int employeeId)
+    {
+      employed.setEmployeeId(employeeId);
+    }
+
+    long getPhoneNumber()
+    {
+      return employed.getPhoneNumber();
+    }
+
+    void setPhoneNumber(long phoneNumber)
+    {
+      employed.setPhoneNumber(phoneNumber);
+    }
+
+    int getAge()
+    {
+      return employed.getAge();
+    }
+
+    void setAge(int age)
+    {
+      employed.setAge(age);
+    }
+
+    char getGender()
+    {
+      return employed.getGender();
+    }
+
+    void setGender(char gender)
+    {
+      employed.setGender(gender);
+    }
+
+    std::string getJobTitle()
+    {
+      return employed.getJobTitle();
+    }
+
+    void setJobTitle(std::string jobTitle)
+    {
+      employed.setJobTitle(jobTitle);
+    }
+
+    double getSalary()
+    {
+      return employed.getSalary();
+    }
+
+    void setSalary(double salary)
+    {
+      employed.setSalary(salary);
+    }
+
+    Date getHireDate()
+    {
+      return employed.getHireDate();
+    }
+
+    void setHireDate(Date hireDate)
+    {
+      employed.setHireDate(hireDate);
     }
 
     private:
