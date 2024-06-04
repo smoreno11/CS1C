@@ -71,6 +71,7 @@ int main()
     inventory[i].quantity = quantity;
   }
 
+  std::cout << std::endl;
   std::cout << std::left;
   std::cout << std::setw(variable::RECEIPT_COL) << "Name of Equipment"
             << std::setw(variable::PRICE_COL)   << "Cost" << "Quantity" << std::endl;
